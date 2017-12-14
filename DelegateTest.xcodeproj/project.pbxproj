@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141622191FE26D15002E4A33 /* MultipleNotificationNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 141622181FE26D15002E4A33 /* MultipleNotificationNode.m */; };
 		149ABA361FD91C6C00731440 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 149ABA351FD91C6C00731440 /* RootViewController.m */; };
 		149ABA391FD91E1500731440 /* SimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 149ABA381FD91E1500731440 /* SimpleViewController.m */; };
 		149ABA3D1FD9204C00731440 /* InvocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 149ABA3C1FD9204C00731440 /* InvocationViewController.m */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		141622171FE26D15002E4A33 /* MultipleNotificationNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultipleNotificationNode.h; sourceTree = "<group>"; };
+		141622181FE26D15002E4A33 /* MultipleNotificationNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleNotificationNode.m; sourceTree = "<group>"; };
 		149ABA341FD91C6C00731440 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		149ABA351FD91C6C00731440 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		149ABA371FD91E1500731440 /* SimpleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleViewController.h; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 			children = (
 				14BA53E31FDA6D0D00AF8498 /* MultipleNotification.h */,
 				14BA53E41FDA6D0D00AF8498 /* MultipleNotification.m */,
+				141622171FE26D15002E4A33 /* MultipleNotificationNode.h */,
+				141622181FE26D15002E4A33 /* MultipleNotificationNode.m */,
 			);
 			path = MultilcasCase;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				149ABA3D1FD9204C00731440 /* InvocationViewController.m in Sources */,
 				149ABA391FD91E1500731440 /* SimpleViewController.m in Sources */,
 				14C416DF1FD8E00600B11CF1 /* BehaviorAnimal.m in Sources */,
+				141622191FE26D15002E4A33 /* MultipleNotificationNode.m in Sources */,
 				149ABA361FD91C6C00731440 /* RootViewController.m in Sources */,
 				14C416E21FD8E1EC00B11CF1 /* BehaviorHuman.m in Sources */,
 				149ABA401FD920BC00731440 /* CurrentDate.m in Sources */,
