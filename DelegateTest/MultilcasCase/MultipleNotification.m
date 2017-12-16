@@ -63,10 +63,57 @@
     }
     [delegates removeAllObjects];
 }
+//System method
+-(NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+    for (MultipleNotificationNode *node in delegates) {
+        id nodeDelegate = node.delegate;
+        
+        NSMethodSignature *signature = [nodeDelegate methodSignatureForSelector:aSelector];
+        if (signature != nil) {
+            return signature;
+        }
+    }
+    return [[self class] instanceMethodSignatureForSelector:@selector(doNothing)];
+}
+- (void)doNothing { }
+//System method
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
+    SEL selector = [anInvocation selector];
+    BOOL foundNilDelegate = NO;
+    
+    for (MultipleNotificationNode *node  in delegates) {
+        id nodeDelegate = node.delegate;
+        
+        if ([nodeDelegate respondsToSelector:selector]) {
+            NSInvocation *dupInvocation = [self duplicateInvocation:anInvocation];
+            
+            dispatch_async(node.delegateQueue, ^{
+                [dupInvocation invokeWithTarget:nodeDelegate];
+            });
+        } else if (nodeDelegate == nil) {
+            foundNilDelegate = YES;
+        }
+        
+    }
+    if (foundNilDelegate) {
+        NSMutableIndexSet *indexSet = [[NSMutableIndexSet alloc]init];
+        
+        NSUInteger i = 0;
+        for (MultipleNotificationNode *node in delegates) {
+            id nodeDelegate = node.delegate;
+            
+            if (nodeDelegate == nil) {
+                [indexSet addIndex:i];
+            }
+            i++;
+        }
+        [delegates removeObjectsAtIndexes:indexSet];
+    }
+}
 -(void)dealloc {
     [self removeAllDelegates];
 }
-
+//复制Invocation
 -(NSInvocation *)duplicateInvocation:(NSInvocation *)origInvocation {
     NSMethodSignature *signature = [origInvocation methodSignature];
     NSInvocation *dupInvocation = [NSInvocation invocationWithMethodSignature:signature];

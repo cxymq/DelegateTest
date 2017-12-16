@@ -16,4 +16,8 @@
 #import "BehaviorAnimal.h"
 #import "BehaviorHuman.h"
 
+#import "MultipleNotification.h"
+#import "UserInfo.h"
+#import "DataSouce.h"
+
 #endif /* PrefixHeader_pch */

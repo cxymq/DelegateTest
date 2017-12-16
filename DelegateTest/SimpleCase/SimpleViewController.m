@@ -9,14 +9,36 @@
 #import "SimpleViewController.h"
 
 @interface SimpleViewController ()<BehaviorDelegate,BehaviorHumanDelegate,BehaviorAnimalDelegate>
-
+{
+    UserInfo *userInfo;
+}
+@property (weak, nonatomic) IBOutlet UILabel *nameLb;
+@property (weak, nonatomic) IBOutlet UILabel *ageLb;
 @end
 
 @implementation SimpleViewController
-
+-(void)dealloc {
+    [userInfo removeDelegate:self];
+}
+-(void)sendMsgWithUserInfo:(NSDictionary *)userInfo {
+    NSLog(@"SimpleViewController----->name:%@;pwd:%@",userInfo[@"userName"],userInfo[@"userAge"]);
+    self.nameLb.text = userInfo[@"userName"];
+    self.ageLb.text = userInfo[@"userAge"];
+}
+- (void)viewWillAppear:(BOOL)animated {
+    self.nameLb.text = userInfo.name;
+    self.ageLb.text = userInfo.age;
+}
+-(void)viewWillDisappear:(BOOL)animated {
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    userInfo = [UserInfo sharedManager];
+    [userInfo addDelegate:self];
+    
     //遵守多个协议，类似tableview
     [self simpleTest];
 }

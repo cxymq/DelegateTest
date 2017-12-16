@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		141622191FE26D15002E4A33 /* MultipleNotificationNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 141622181FE26D15002E4A33 /* MultipleNotificationNode.m */; };
+		145C58F31FE51FB40020D23F /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 145C58F21FE51FB40020D23F /* UserInfoViewController.m */; };
+		1495D0E11FE3686400D24C0E /* MutipleCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1495D0E01FE3686400D24C0E /* MutipleCaseViewController.m */; };
+		1495D0E41FE369C700D24C0E /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1495D0E31FE369C700D24C0E /* UserInfo.m */; };
+		1495D0E71FE36AFE00D24C0E /* DataSouce.m in Sources */ = {isa = PBXBuildFile; fileRef = 1495D0E61FE36AFE00D24C0E /* DataSouce.m */; };
 		149ABA361FD91C6C00731440 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 149ABA351FD91C6C00731440 /* RootViewController.m */; };
 		149ABA391FD91E1500731440 /* SimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 149ABA381FD91E1500731440 /* SimpleViewController.m */; };
 		149ABA3D1FD9204C00731440 /* InvocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 149ABA3C1FD9204C00731440 /* InvocationViewController.m */; };
@@ -47,6 +51,14 @@
 /* Begin PBXFileReference section */
 		141622171FE26D15002E4A33 /* MultipleNotificationNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultipleNotificationNode.h; sourceTree = "<group>"; };
 		141622181FE26D15002E4A33 /* MultipleNotificationNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleNotificationNode.m; sourceTree = "<group>"; };
+		145C58F11FE51FB40020D23F /* UserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		145C58F21FE51FB40020D23F /* UserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		1495D0DF1FE3686400D24C0E /* MutipleCaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutipleCaseViewController.h; sourceTree = "<group>"; };
+		1495D0E01FE3686400D24C0E /* MutipleCaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MutipleCaseViewController.m; sourceTree = "<group>"; };
+		1495D0E21FE369C700D24C0E /* UserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		1495D0E31FE369C700D24C0E /* UserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		1495D0E51FE36AFE00D24C0E /* DataSouce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataSouce.h; sourceTree = "<group>"; };
+		1495D0E61FE36AFE00D24C0E /* DataSouce.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataSouce.m; sourceTree = "<group>"; };
 		149ABA341FD91C6C00731440 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		149ABA351FD91C6C00731440 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		149ABA371FD91E1500731440 /* SimpleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleViewController.h; sourceTree = "<group>"; };
@@ -127,6 +139,14 @@
 				14BA53E41FDA6D0D00AF8498 /* MultipleNotification.m */,
 				141622171FE26D15002E4A33 /* MultipleNotificationNode.h */,
 				141622181FE26D15002E4A33 /* MultipleNotificationNode.m */,
+				1495D0DF1FE3686400D24C0E /* MutipleCaseViewController.h */,
+				1495D0E01FE3686400D24C0E /* MutipleCaseViewController.m */,
+				145C58F11FE51FB40020D23F /* UserInfoViewController.h */,
+				145C58F21FE51FB40020D23F /* UserInfoViewController.m */,
+				1495D0E21FE369C700D24C0E /* UserInfo.h */,
+				1495D0E31FE369C700D24C0E /* UserInfo.m */,
+				1495D0E51FE36AFE00D24C0E /* DataSouce.h */,
+				1495D0E61FE36AFE00D24C0E /* DataSouce.m */,
 			);
 			path = MultilcasCase;
 			sourceTree = "<group>";
@@ -352,6 +372,8 @@
 				14BA53E51FDA6D0D00AF8498 /* MultipleNotification.m in Sources */,
 				14BA53DE1FDA35CE00AF8498 /* BaseAddNotification.m in Sources */,
 				149ABA3D1FD9204C00731440 /* InvocationViewController.m in Sources */,
+				145C58F31FE51FB40020D23F /* UserInfoViewController.m in Sources */,
+				1495D0E11FE3686400D24C0E /* MutipleCaseViewController.m in Sources */,
 				149ABA391FD91E1500731440 /* SimpleViewController.m in Sources */,
 				14C416DF1FD8E00600B11CF1 /* BehaviorAnimal.m in Sources */,
 				141622191FE26D15002E4A33 /* MultipleNotificationNode.m in Sources */,
@@ -361,7 +383,9 @@
 				14C416B41FD8D7DF00B11CF1 /* main.m in Sources */,
 				14C416DC1FD8DADB00B11CF1 /* Behavior.m in Sources */,
 				14C416A61FD8D7DF00B11CF1 /* AppDelegate.m in Sources */,
+				1495D0E41FE369C700D24C0E /* UserInfo.m in Sources */,
 				14C416D81FD8D8EF00B11CF1 /* BaseNotification.m in Sources */,
+				1495D0E71FE36AFE00D24C0E /* DataSouce.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
