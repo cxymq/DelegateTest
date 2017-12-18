@@ -5,7 +5,7 @@
 //  Created by wq on 2017/12/16.
 //  Copyright © 2017年 mikey. All rights reserved.
 //
-//设置代理传值，只需要在 改动确定（如个人信息修改） 之前的VC（在同一栈内）遵守协议，这样代理才有意义；不在同一个栈的VC，或许已经销毁，遵守代理并无作用，需要在viewWillAppear:中访问全局数据UserInfo即可。
+//设置代理传值，只需要在 改动确定（如个人信息修改） 之前的VC（在同一栈内）遵守协议，这样代理才有意义；不在同一个栈的VC，或许已经销毁，遵守代理并无作用，在viewWillAppear:中访问全局个人信息类UserInfo即可。 总之，遵守代理的类在发通知之前不能销毁。
 #import "UserInfoViewController.h"
 
 @interface UserInfoViewController ()
@@ -24,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
 }
